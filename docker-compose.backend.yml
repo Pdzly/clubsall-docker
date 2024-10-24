@@ -6,9 +6,7 @@ x-logging: &default-logging
 
 include:
   - common/services.yml
-  - federation/services.yml
-  - ${UI:-lemmy}-ui/services.yml
-  - backend/seeder.yml
+  - lemmy-ui/services.yml
 
 services:
   api:

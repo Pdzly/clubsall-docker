@@ -12,7 +12,7 @@ services:
     image: ghcr.io/sublinks/sublinks-api:main
     restart: always
     environment:
-      SUBLINKS_DB_URL: jdbc:postgresql://maindb:5432/sublinks?currentSchema=backend&sslmode=disable
+      SUBLINKS_DB_URL: jdbc:postgresql://maindb:5432/clubsall?currentSchema=backend&sslmode=disable
       SUBLINKS_DB_USERNAME: backend
       SUBLINKS_DB_PASSWORD: backend
       SUBLINKS_JWT_SECRET: YouShouldChangeThisItJustNeedsToBe64charactersLongUsingAlphaNum1
@@ -20,8 +20,8 @@ services:
       SUBLINKS_PICTRS_URL: http://pictrs:8080
       FEDERATION_QUEUE_HOST: queue
       FEDERATION_QUEUE_PORT: 5672
-      FEDERATION_QUEUE_USER: sublinks
-      FEDERATION_QUEUE_PASS: sublinks
+      FEDERATION_QUEUE_USER: clubsall
+      FEDERATION_QUEUE_PASS: clubsall
       FEDERATION_QUEUE_NAME: federation
       FEDERATION_EXCHANGE_NAME: federation
       BACKEND_QUEUE_NAME: backend
