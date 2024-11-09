@@ -36,8 +36,8 @@ services:
     image: rabbitmq:3-management
     restart: always
     environment:
-      - RABBITMQ_DEFAULT_USER=sublinks
-      - RABBITMQ_DEFAULT_PASS=sublinks
+      - RABBITMQ_DEFAULT_USER=clubsall
+      - RABBITMQ_DEFAULT_PASS=clubsall
     ports:
       - "5672:5672"
       - "15672:15672"
